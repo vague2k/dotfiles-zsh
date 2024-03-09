@@ -24,8 +24,5 @@ eval "$(zoxide init --cmd cd zsh)"
 # term theme using starship.rs, see https://starship.rs/
 eval "$(starship init zsh)"
 
-# persist colorscheme on wal on reboot
-wal -R
-
 # because obviously right?
 neofetch
