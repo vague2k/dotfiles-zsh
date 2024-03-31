@@ -1,7 +1,8 @@
 ###------- SOURCE -------###
 
 source $ZDOTDIR/ghplug.zsh
-source $ZDOTDIR/.fzf.zsh
+source $ZDOTDIR/fzf.zsh
+source $ZDOTDIR/update_kitty_window_title.zsh
 
 ###------- ALIAS -------###
 
