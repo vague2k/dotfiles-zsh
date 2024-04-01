@@ -10,7 +10,7 @@
 # function called every time shell is about to draw prompt
 update_kitty_window_title() {
   if [ ${ZSH_VERSION} ]; then
-    local current_dir="${PWD/#$HOME/~}"  # replace home directory path with "~"
+    local current_dir="${PWD/#$HOME/$(whoami)@$HOST: ~}"  # replace home directory path with "user@hostname: ~"
     echo -ne "\e]0;$current_dir\a"
   elif [ ${BASH_VERSION} ]; then
     local current_dir="${PWD/#$HOME/~}"
