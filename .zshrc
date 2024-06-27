@@ -16,9 +16,14 @@ alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 alias ls="eza --icons -a -F -H --group-directories-first --git"
 alias ll="eza --icons -alF"
 alias tree="eza --tree"
+alias rum="rummage get"
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles-arch --work-tree=$HOME"
 
+###------- OPTS --------###
+setopt interactivecomments
+
+###------- EVALS -------###
 # a smarter cd command, see https://github.com/ajeetdsouza/zoxide for more info
 eval "$(zoxide init --cmd cd zsh)"
 
